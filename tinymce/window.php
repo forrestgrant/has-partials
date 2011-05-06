@@ -29,8 +29,8 @@ require_once( dirname( dirname( dirname(__FILE__) ) ) . '/has-partials/config.ph
 				
 					$handle = opendir(getcwd() . "/../partials");
 					while (false !== ($file = readdir($handle))) {
-						if(($file == ".") || ($file == "..")) {
-						} else {
+						$arr = explode(".", $file);
+						if($arr[sizeof($arr)-1] == 'php') {
 							echo '<option value="' . $file . '" >' . $file . '</option>' . "\n";
 						}
 					}
