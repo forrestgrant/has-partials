@@ -1,0 +1,11 @@
+== Has Partials Version 1.0 ==
+This plugin allows you to add php partials to your wordpress pages.
+
+== Installation ==
+1. Add the 'has-partials' directory to your wp-content/plugins folder.
+2. Enable the plugin in your plugin manager.
+
+== Usage ==
+* Upload any php files you would like to appear on pages to the has-partials/partials folder
+* When editing a page, there will be a php icon in the WYSIWYG editor that automatically displays the contents of this folder.
+* Choose the file of your choice, and it will be displayed on the page.
